@@ -1,0 +1,16 @@
+IF 
+IFNULL({Medical\Cancer Diagnosis 1},'x',{Medical\Cancer Diagnosis 1})='Prostate' 
+THEN {Medical\Age Cancer Diagnosis 1}
+ELSE 	IF 
+	IFNULL({Medical\Cancer Diagnosis 2},'x',{Medical\Cancer Diagnosis 2})='Prostate' 
+	THEN {Medical\Age Cancer Diagnosis 2}
+	ELSE 	IF 
+		IFNULL({Medical\Cancer Diagnosis 3},'x',{Medical\Cancer Diagnosis 3})='Prostate' 
+		THEN {Medical\Age Cancer Diagnosis 3}
+		ELSE 	IF 
+			IFNULL({Medical\Cancer Diagnosis 4},'x',{Medical\Cancer Diagnosis 4})='Prostate' 
+			THEN {Medical\Age Cancer Diagnosis 4}
+			ENDIF 
+		ENDIF 
+	ENDIF 
+ENDIF
