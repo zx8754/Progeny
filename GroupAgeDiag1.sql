@@ -1,6 +1,6 @@
 CASE
 WHEN     IFNULL({Query\Practical\AgeDiag},-9,{Query\Practical\AgeDiag})>= 0
-     AND IFNULL({Query\Practical\AgeDiag},9999,{Query\Practical\AgeDiag})< 54
+     AND IFNULL({Query\Practical\AgeDiag},9999,{Query\Practical\AgeDiag})<= 54
 THEN '0-54'
 WHEN     IFNULL({Query\Practical\AgeDiag},-9,{Query\Practical\AgeDiag})>= 55
      AND IFNULL({Query\Practical\AgeDiag},9999,{Query\Practical\AgeDiag})<= 59
